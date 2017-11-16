@@ -73,7 +73,7 @@ class CFLint(Linter):
 
         jar_file = self.get_jarfile_path()
 
-        return [self.executable_path, '-jar', jar_file, '-file', '@', '-q', '-text']
+        return [self.executable_path, '-jar', jar_file, '-file', '@', '-text']
 
     def get_jarfile_path(self):
         """Return the absolute path to the CFLint jar file."""
